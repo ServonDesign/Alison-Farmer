@@ -1,0 +1,71 @@
+.header {
+  width: 100%;
+  padding: 0.5rem 4rem 0.8rem;
+
+  @media(min-width: @sm-min) {
+    padding: 0.5rem 4rem 0.8rem;
+  }
+
+  @media(min-width: @md-min) {
+    padding: 0 2.8rem;
+  }
+
+  &--container {
+    .flexbox();
+    .align-items(center);
+    .justify-content(space-between);
+  }
+
+  .header__brand {
+
+    padding-left: 0;
+
+    @media(min-width: @md-min) {
+      padding-left: 1.3rem;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    svg {
+      width: 20.2rem;
+      height: 9.9rem;
+    }
+
+  }
+
+  .header__nav {
+
+    margin-top: -3.4rem;
+
+    button {
+      @media(min-width: @md-min) {
+        display: none;
+      }
+    }
+
+    &--container {
+      .flexbox();
+      margin: 0;
+      display: none;
+
+      @media(min-width: @md-min) {
+        display: flex;
+      }
+    }
+
+    li {
+      margin: 0;
+    }
+
+    a {
+      text-transform: uppercase;
+      margin-left: 2.4rem;
+      color: @white;
+      font-size: 1.4rem;
+    }
+
+  }
+
+}
